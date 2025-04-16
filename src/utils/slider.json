@@ -1,0 +1,69 @@
+[
+    {
+      "name": "Aliva Priva Jardin",
+      "price": "47,043",
+      "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+      "image": "/images/a.jpeg"
+    },
+    {
+      "name": "Bali Serenity Villas",
+      "price": "50,000",
+      "detail": "Bali Beach Road, Denpasar, Bali",
+      "image": "/images/b.jpeg"
+    },
+    {
+      "name": "Surabaya Central Residences",
+      "price": "35,000",
+      "detail": "Surabaya, East Java, Indonesia",
+      "image": "/images/c.jpeg"
+    },
+    {
+      "name": "Medan Grand Palace",
+      "price": "60,000",
+      "detail": "Medan City, North Sumatra",
+      "image": "/images/d.jpeg"
+    },
+    {
+      "name": "Bandung Heights",
+      "price": "40,000",
+      "detail": "Bandung, West Java, Indonesia",
+      "image": "/images/e.jpeg"
+    },
+    {
+      "name": "Makassar Elite Homes",
+      "price": "45,500",
+      "detail": "Makassar, South Sulawesi",
+      "image": "/images/f.jpeg"
+    },
+    {
+      "name": "Yogyakarta Heritage Estate",
+      "price": "55,200",
+      "detail": "Yogyakarta, Indonesia",
+      "image": "/images/g.jpeg"
+    },
+    {
+      "name": "Surakarta Royal View",
+      "price": "42,300",
+      "detail": "Surakarta, Central Java",
+      "image": "/images/h.jpeg"
+    },
+    {
+      "name": "Denpasar Palm Residency",
+      "price": "51,800",
+      "detail": "Denpasar, Bali, Indonesia",
+      "image": "/images/i.jpeg"
+    },
+    {
+      "name": "Kediri Blossom Heights",
+      "price": "48,700",
+      "detail": "Kediri, East Java",
+      "image": "/images/j.jpeg"
+    },
+    {
+      "name": "Palembang Green Valley",
+      "price": "53,900",
+      "detail": "Palembang, South Sumatra",
+      "image": "/images/k.jpeg"
+    }
+  ]
+  

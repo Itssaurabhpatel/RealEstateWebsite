@@ -1,0 +1,107 @@
+
+.accord-box .accordion {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .accordionItem {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .accordion-btn {
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .accordionItem[aria-expanded="true"],
+  .accordion__item--expanded {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .secondaryText {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .heading {
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .v-wrap {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .accord-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .icon svg{
+    fill: var(--blue);
+  }
+
+  @media(max-width: 640px) {
+    .v-wrap {
+      width: 100%;
+      padding: 1rem; 
+    }
+  
+    h4 {
+      color: rgb(3, 186, 24);
+      margin-bottom: 3px;
+      font-size: 18px; 
+    }
+  
+    .accord-box {
+      width: 100%;
+      margin-top: 20px; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .accordion-btn {
+      font-size: 14px; 
+    }
+  
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      margin-right: 10px;
+    }
+  
+    .heading {
+      font-weight: 550;
+      font-size: 11px; 
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .secondaryText {
+      font-size: 12px; 
+      text-align: left; 
+      padding: 0 1rem 1rem 1rem;
+    }
+  
+    .icon svg {
+      width: 16px; 
+      height: 16px;
+    }  
+  }

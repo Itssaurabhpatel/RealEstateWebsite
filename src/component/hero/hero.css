@@ -1,0 +1,247 @@
+.hero-wrapper {
+    position: relative;
+    background-image: 
+      linear-gradient(to right, rgba(72, 206, 70, 0.271) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(72, 206, 70, 0.271) 1px, transparent 1px);
+    background-size: 40px 40px;
+    padding: 4rem 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Left and right white shadows */
+  .hero-wrapper::before,
+  .hero-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+i{
+    color: var(--blue);
+}
+  
+  .hero-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+  }
+  
+  .hero-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+  }
+  
+  .shadow-top,
+  .shadow-bottom {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .shadow-top {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  }
+  
+  .shadow-bottom {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), transparent);
+  }
+  
+  .hero-container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .hero-left,
+  .hero-right {
+    flex: 1 1 500px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .hero-left > h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  .tagline {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 550px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform-style: preserve-3d;
+  }
+  
+  .image-container img:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  }
+  .typing-text {
+    color: #03b600 !important; 
+    font-style: italic; 
+  }
+
+  
+  /* Responsive text */
+  @media (max-width: 768px) {
+    .hero-left > h1 {
+      font-size: 30px;
+    }
+  
+    .tagline {
+      font-size: 14px;
+    }
+    .search-bar{
+        
+    }
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    width: 500px;
+    margin: 20px auto;
+  }
+  
+  .loc-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .search-bar input::placeholder {
+    color: #999;
+  }
+  
+  .search-button {
+    background-color: var(--blue);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #ecedf6;
+    color: black;
+  }
+
+  /* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 700px;
+    margin: 50px auto;
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stat span:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .stat span:last-child {
+    font-size: 16px;
+    color: #555;
+  } 
+   
+  @media (max-width: 640px) {
+    .hero-container {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .hero-left{
+      width: 60%;
+    }
+    .search-bar{
+      width: 100%;
+      transform: scale(0.9);
+    }
+  
+    .hero-title > h1 {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  
+    .image-container {
+      width: 95%;
+      height: 25rem;
+    }
+  
+    .stats {
+      margin-top: -145px;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 80%;
+      transform: scale(0.9);
+    }
+  
+    .hero-right {
+      width: 100%;
+    }
+  }
+  
+
