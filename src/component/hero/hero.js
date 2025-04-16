@@ -54,7 +54,7 @@ const Hero = () => {
         {/* right part */}
         <div className="hero-right">
           <div className="image-container">
-            <img src="./hero-image.jpeg" alt="hero" />
+            <img src={`${process.env.PUBLIC_URL}/hero-image.jpeg`} alt="hero" />
           </div>
         </div>
       </div>

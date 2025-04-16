@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="h-container flexCenter paddings innerWidth">
-        <img src="./logo.png" alt="logo" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="logo" />
 
         <OutsideClickHandler onOutsideClick={() => setMenuOpen(false)}>
           <div className="h-menu flexCenter" style={getMenuStyles(menuOpen)}>

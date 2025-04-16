@@ -31,14 +31,14 @@ const Resendencies = () => {
         >
           {data.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="r-card">
-                <img src={card.image} alt={card.name} />
-                <span className='r-price'>
-                  <span>$</span>{card.price}
-                </span>
-                <span className='r-name'>{card.name}</span>
-              </div>
-            </SwiperSlide>
+            <div className="r-card">
+            <img src={`${process.env.PUBLIC_URL}${card.image}`} alt={card.name} />
+              <span className='r-price'>
+                <span>$</span>{card.price}
+              </span>
+              <span className='r-name'>{card.name}</span>
+            </div>
+          </SwiperSlide>
           ))}
         </Swiper>
       </div>
